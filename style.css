@@ -29,7 +29,6 @@ body {
 }
 
 h1 {
-    text-align: left;
     color: var(--very-dark-magenta);
 }
 
@@ -42,8 +41,12 @@ p {
 
 .top-part {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-flow: wrap;
+}
+
+.right-part {
+    margin-left: 150px;
 }
 
 .right-rate-part {
@@ -69,19 +72,19 @@ p {
 
 #first-rate {
     width: 100%;
-    margin-left: 0%;
+    margin-left: 10%;
     margin-right: 20%;
 }
 
 #second-rate {
     width: 100%;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-right: 10%;
 }
 
 #third-rate {
     width: 100%;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-right: 0%;
 }
 
@@ -89,11 +92,17 @@ img {
     padding: 2px;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
 .card {
     width: 30%;
     border-radius: 20px;
     background: var(--very-dark-magenta);
-    text-align: left;
     transition: 0.3s;
     padding: 15px;
     font-size: 14px;
@@ -116,13 +125,6 @@ img {
 
 img {
     border-radius: 50%;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow: wrap;
 }
 
 .card-header {
